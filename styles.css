@@ -126,7 +126,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background-image: url('Hero.png');
+    background-image: url('Floresta2.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -490,7 +490,7 @@ section {
 
 /* Contato Section */
 .contato {
-    background-image: url('Contatos.png');
+    background-image: url('Flores.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
