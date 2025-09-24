@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <!-- Header -->
@@ -233,17 +234,16 @@
 
     <!-- Depoimentos Section -->
     <section id="depoimentos" class="depoimentos">
-      <div class="depoimentos-grid">
-          <div class="container">
+        <div class="container">
             <div class="section-header">
                 <h2>Depoimentos</h2>
                 <div class="section-line"></div>
                 <p>Experiências compartilhadas por quem dividiu um pouco de sua história comigo</p>
             </div>
 
-              <div class="depoimentos-content">
-                <div class="depoimentos-grid">
-                    <div class="depoimento-placeholder">
+            <div class="swiper depoimentos-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide depoimento-placeholder">
                         <div class="placeholder-icon">
                             <i class="fas fa-image"></i>
                         </div>
@@ -251,7 +251,7 @@
                         <span class="placeholder-note">Adicione aqui</span>
                     </div>
                     
-                    <div class="depoimento-placeholder">
+                    <div class="swiper-slide depoimento-placeholder">
                         <div class="placeholder-icon">
                             <i class="fas fa-image"></i>
                         </div>
@@ -259,7 +259,7 @@
                         <span class="placeholder-note">Adicione aqui</span>
                     </div>
                     
-                    <div class="depoimento-placeholder">
+                    <div class="swiper-slide depoimento-placeholder">
                         <div class="placeholder-icon">
                             <i class="fas fa-image"></i>
                         </div>
@@ -267,13 +267,19 @@
                         <span class="placeholder-note">Adicione aqui</span>
                     </div>
                 </div>
-                
-                <div class="depoimentos-info">
-                    <h3>Privacidade e Ética</h3>
-                    <p>
-                        Todos os depoimentos são compartilhados com autorização expressa dos pacientes, respeitando rigorosamente o sigilo profissional e as diretrizes éticas da psicologia. As identidades são preservadas e apenas experiências gerais sobre o processo terapêutico são compartilhadas.
-                    </p>
-                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            
+            <div class="depoimentos-info">
+                <h3>Privacidade e Ética</h3>
+                <p>
+                    Todos os depoimentos são compartilhados com autorização expressa dos pacientes, respeitando rigorosamente o sigilo profissional e as diretrizes éticas da psicologia. As identidades são preservadas e apenas experiências gerais sobre o processo terapêutico são compartilhadas.
+                </p>
             </div>
         </div>
     </section>
@@ -344,6 +350,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
