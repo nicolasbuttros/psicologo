@@ -49,13 +49,47 @@ const observer = new IntersectionObserver((entries) => {
 
 // Aplicar animação aos elementos
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.modalidade-card, .contato-item, .credential-item');
+    const animatedElements = document.querySelectorAll(".modalidade-card, .contato-item, .credential-item");
     
     animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        el.style.opacity = "0";
+        el.style.transform = "translateY(30px)";
+        el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
         observer.observe(el);
+    });
+
+    // Initialize Swiper
+    const swiper = new Swiper(".depoimentos-swiper", {
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            // when window width is >= 768px
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            // when window width is >= 1024px
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 40
+            }
+        }
     });
 });
 
