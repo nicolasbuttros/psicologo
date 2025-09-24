@@ -126,7 +126,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background-image: url('Cascalho.jpg');
+    background-image: url('Floresta2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -978,4 +978,35 @@ section {
     filter: brightness(0) invert(1);
 }
 
+
+
+
+/* Swiper Styles */
+.depoimentos-swiper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px; /* Espaço para a paginação */
+}
+
+.depoimentos-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos-swiper .swiper-pagination-bullet-active {
+    background: var(--accent-color);
+}
+
+.depoimentos-swiper .swiper-button-next,
+.depoimentos-swiper .swiper-button-prev {
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .depoimentos-swiper .swiper-button-next,
+    .depoimentos-swiper .swiper-button-prev {
+        display: none; /* Oculta botões de navegação em mobile */
+    }
+}
 
