@@ -895,6 +895,7 @@ section {
 }
 
 .depoimentos-info {
+    margin-top: 4rem; /* Ajuste este valor conforme a necessidade */
     background: var(--white);
     padding: 2.5rem;
     border-radius: 20px;
