@@ -830,99 +830,9 @@ section {
     opacity: 0.9;
 }
 
-/* Depoimentos Section */
-.depoimentos {
-    background: linear-gradient(135deg, var(--cream), var(--earth-light));
-}
-
-.depoimentos-content {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-
-.depoimentos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.depoimento-placeholder {
-    background: var(--white);
-    padding: 3rem 2rem;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 5px 20px var(--shadow);
-    border: 2px dashed var(--accent-color);
-    transition: transform 0.3s ease;
-    min-height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.depoimento-placeholder:hover {
-    transform: translateY(-3px);
-}
-
-.placeholder-icon {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, var(--sage-green), var(--earth-medium));
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-}
-
-.placeholder-icon i {
-    font-size: 1.5rem;
-    color: var(--white);
-}
-
-.depoimento-placeholder p {
-    color: var(--text-light);
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}
-
-.placeholder-note {
-    color: var(--accent-color);
-    font-size: 0.9rem;
-    font-style: italic;
-}
-
-.depoimentos-info {
-    margin-top: 4rem; /* Ajuste este valor conforme a necessidade */
-    background: var(--white);
-    padding: 2.5rem;
-    border-radius: 20px;
-    box-shadow: 0 5px 20px var(--shadow);
-    border-left: 4px solid var(--secondary-color);
-}
-
-.depoimentos-info h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-}
-
-.depoimentos-info p {
-    color: var(--text-light);
-    line-height: 1.8;
-    font-size: 1rem;
-}
-
 /* Responsividade para as novas seções */
 @media (max-width: 768px) {
     .conceitos-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .depoimentos-grid {
         grid-template-columns: 1fr;
     }
     
@@ -938,9 +848,6 @@ section {
         font-size: 1.5rem;
     }
     
-    .depoimentos-info {
-        padding: 2rem;
-    }
 }
 
 
@@ -977,37 +884,5 @@ section {
 .footer-mandala {
     height: 50px;
     filter: brightness(0) invert(1);
-}
-
-
-
-
-/* Swiper Styles */
-.depoimentos-swiper {
-    width: 100%;
-    height: auto;
-    padding-bottom: 50px; /* Espaço para a paginação */
-}
-
-.depoimentos-swiper .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.depoimentos-swiper .swiper-pagination-bullet-active {
-    background: var(--accent-color);
-}
-
-.depoimentos-swiper .swiper-button-next,
-.depoimentos-swiper .swiper-button-prev {
-    color: var(--accent-color);
-}
-
-@media (max-width: 768px) {
-    .depoimentos-swiper .swiper-button-next,
-    .depoimentos-swiper .swiper-button-prev {
-        display: none; /* Oculta botões de navegação em mobile */
-    }
 }
 
